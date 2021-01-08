@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DE0AA49025A6233900545240"
-               BuildableName = "Draw_TransitionTests.xctest"
-               BlueprintName = "Draw_TransitionTests"
-               ReferencedContainer = "container:Draw Transition.xcodeproj">
+               BuildableName = "DrawTransitionTests.xctest"
+               BlueprintName = "DrawTransitionTests"
+               ReferencedContainer = "container:DrawTransition.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

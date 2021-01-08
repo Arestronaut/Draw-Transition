@@ -12,7 +12,7 @@
 		DE0AA48825A6226600545240 /* DrawContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0AA48725A6226600545240 /* DrawContainerView.swift */; };
 		DE0AA48B25A6228600545240 /* DrawPresentationControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0AA48A25A6228600545240 /* DrawPresentationControllerViewModel.swift */; };
 		DE0AA49425A6233900545240 /* Draw_TransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0AA49325A6233900545240 /* Draw_TransitionTests.swift */; };
-		DE0AA49625A6233900545240 /* Draw_Transition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0AA47825A620D800545240 /* Draw_Transition.framework */; };
+		DE0AA49625A6233900545240 /* DrawTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0AA47825A620D800545240 /* DrawTransition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,13 +26,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE0AA47825A620D800545240 /* Draw_Transition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Draw_Transition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0AA47825A620D800545240 /* DrawTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrawTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0AA47B25A620D800545240 /* Draw_Transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Draw_Transition.h; sourceTree = "<group>"; };
 		DE0AA47C25A620D800545240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE0AA48425A6222900545240 /* DrawPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPresentationController.swift; sourceTree = "<group>"; };
 		DE0AA48725A6226600545240 /* DrawContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawContainerView.swift; sourceTree = "<group>"; };
 		DE0AA48A25A6228600545240 /* DrawPresentationControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPresentationControllerViewModel.swift; sourceTree = "<group>"; };
-		DE0AA49125A6233900545240 /* Draw_TransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draw_TransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0AA49125A6233900545240 /* DrawTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0AA49325A6233900545240 /* Draw_TransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw_TransitionTests.swift; sourceTree = "<group>"; };
 		DE0AA49525A6233900545240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0AA49625A6233900545240 /* Draw_Transition.framework in Frameworks */,
+				DE0AA49625A6233900545240 /* DrawTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +59,8 @@
 		DE0AA46E25A620D800545240 = {
 			isa = PBXGroup;
 			children = (
-				DE0AA47A25A620D800545240 /* Draw Transition */,
-				DE0AA49225A6233900545240 /* Draw_TransitionTests */,
+				DE0AA47A25A620D800545240 /* DrawTransition */,
+				DE0AA49225A6233900545240 /* DrawTransitionTests */,
 				DE0AA47925A620D800545240 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +68,13 @@
 		DE0AA47925A620D800545240 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE0AA47825A620D800545240 /* Draw_Transition.framework */,
-				DE0AA49125A6233900545240 /* Draw_TransitionTests.xctest */,
+				DE0AA47825A620D800545240 /* DrawTransition.framework */,
+				DE0AA49125A6233900545240 /* DrawTransitionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE0AA47A25A620D800545240 /* Draw Transition */ = {
+		DE0AA47A25A620D800545240 /* DrawTransition */ = {
 			isa = PBXGroup;
 			children = (
 				DE0AA47B25A620D800545240 /* Draw_Transition.h */,
@@ -83,16 +83,16 @@
 				DE0AA48725A6226600545240 /* DrawContainerView.swift */,
 				DE0AA48A25A6228600545240 /* DrawPresentationControllerViewModel.swift */,
 			);
-			path = "Draw Transition";
+			path = DrawTransition;
 			sourceTree = "<group>";
 		};
-		DE0AA49225A6233900545240 /* Draw_TransitionTests */ = {
+		DE0AA49225A6233900545240 /* DrawTransitionTests */ = {
 			isa = PBXGroup;
 			children = (
 				DE0AA49325A6233900545240 /* Draw_TransitionTests.swift */,
 				DE0AA49525A6233900545240 /* Info.plist */,
 			);
-			path = Draw_TransitionTests;
+			path = DrawTransitionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +109,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DE0AA47725A620D800545240 /* Draw Transition */ = {
+		DE0AA47725A620D800545240 /* DrawTransition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE0AA48025A620D800545240 /* Build configuration list for PBXNativeTarget "Draw Transition" */;
+			buildConfigurationList = DE0AA48025A620D800545240 /* Build configuration list for PBXNativeTarget "DrawTransition" */;
 			buildPhases = (
 				DE0AA47325A620D800545240 /* Headers */,
 				DE0AA47425A620D800545240 /* Sources */,
@@ -122,14 +122,14 @@
 			);
 			dependencies = (
 			);
-			name = "Draw Transition";
+			name = DrawTransition;
 			productName = "Draw Transition";
-			productReference = DE0AA47825A620D800545240 /* Draw_Transition.framework */;
+			productReference = DE0AA47825A620D800545240 /* DrawTransition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DE0AA49025A6233900545240 /* Draw_TransitionTests */ = {
+		DE0AA49025A6233900545240 /* DrawTransitionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE0AA49925A6233900545240 /* Build configuration list for PBXNativeTarget "Draw_TransitionTests" */;
+			buildConfigurationList = DE0AA49925A6233900545240 /* Build configuration list for PBXNativeTarget "DrawTransitionTests" */;
 			buildPhases = (
 				DE0AA48D25A6233900545240 /* Sources */,
 				DE0AA48E25A6233900545240 /* Frameworks */,
@@ -140,9 +140,9 @@
 			dependencies = (
 				DE0AA49825A6233900545240 /* PBXTargetDependency */,
 			);
-			name = Draw_TransitionTests;
+			name = DrawTransitionTests;
 			productName = Draw_TransitionTests;
-			productReference = DE0AA49125A6233900545240 /* Draw_TransitionTests.xctest */;
+			productReference = DE0AA49125A6233900545240 /* DrawTransitionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DE0AA47225A620D800545240 /* Build configuration list for PBXProject "Draw Transition" */;
+			buildConfigurationList = DE0AA47225A620D800545240 /* Build configuration list for PBXProject "DrawTransition" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,8 +176,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE0AA47725A620D800545240 /* Draw Transition */,
-				DE0AA49025A6233900545240 /* Draw_TransitionTests */,
+				DE0AA47725A620D800545240 /* DrawTransition */,
+				DE0AA49025A6233900545240 /* DrawTransitionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,7 +223,7 @@
 /* Begin PBXTargetDependency section */
 		DE0AA49825A6233900545240 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE0AA47725A620D800545240 /* Draw Transition */;
+			target = DE0AA47725A620D800545240 /* DrawTransition */;
 			targetProxy = DE0AA49725A6233900545240 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -281,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -339,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -361,7 +361,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Draw Transition/Info.plist";
+				INFOPLIST_FILE = DrawTransition/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,7 +387,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Draw Transition/Info.plist";
+				INFOPLIST_FILE = DrawTransition/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,7 +407,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UN495CWDD6;
-				INFOPLIST_FILE = Draw_TransitionTests/Info.plist;
+				INFOPLIST_FILE = DrawTransitionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,7 +425,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UN495CWDD6;
-				INFOPLIST_FILE = Draw_TransitionTests/Info.plist;
+				INFOPLIST_FILE = DrawTransitionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +441,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE0AA47225A620D800545240 /* Build configuration list for PBXProject "Draw Transition" */ = {
+		DE0AA47225A620D800545240 /* Build configuration list for PBXProject "DrawTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE0AA47E25A620D800545240 /* Debug */,
@@ -450,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE0AA48025A620D800545240 /* Build configuration list for PBXNativeTarget "Draw Transition" */ = {
+		DE0AA48025A620D800545240 /* Build configuration list for PBXNativeTarget "DrawTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE0AA48125A620D800545240 /* Debug */,
@@ -459,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE0AA49925A6233900545240 /* Build configuration list for PBXNativeTarget "Draw_TransitionTests" */ = {
+		DE0AA49925A6233900545240 /* Build configuration list for PBXNativeTarget "DrawTransitionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE0AA49A25A6233900545240 /* Debug */,

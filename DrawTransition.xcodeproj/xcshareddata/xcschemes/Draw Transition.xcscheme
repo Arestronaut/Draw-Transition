@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DE0AA47725A620D800545240"
-               BuildableName = "Draw_Transition.framework"
-               BlueprintName = "Draw Transition"
-               ReferencedContainer = "container:Draw Transition.xcodeproj">
+               BuildableName = "DrawTransition.framework"
+               BlueprintName = "DrawTransition"
+               ReferencedContainer = "container:DrawTransition.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE0AA47725A620D800545240"
-            BuildableName = "Draw_Transition.framework"
-            BlueprintName = "Draw Transition"
-            ReferencedContainer = "container:Draw Transition.xcodeproj">
+            BuildableName = "DrawTransition.framework"
+            BlueprintName = "DrawTransition"
+            ReferencedContainer = "container:DrawTransition.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
