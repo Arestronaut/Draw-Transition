@@ -128,12 +128,12 @@ public final class DrawerPresentationController: UIPresentationController {
 }
 
 extension DrawerPresentationController: DrawerContainerViewDelegate {
-    public func view(_ view: DrawerContainerView, shouldPassthroughTouchAt point: CGPoint) -> Bool {
+    internal func view(_ view: DrawerContainerView, shouldPassthroughTouchAt point: CGPoint) -> Bool {
         guard let presentedView = presentedView else { return false }
         return !presentedView.bounds.contains(presentedView.convert(point, from: view))
     }
 
-    public func view(_ view: DrawerContainerView, forTouchAt point: CGPoint) -> UIView? {
+    internal func view(_ view: DrawerContainerView, forTouchAt point: CGPoint) -> UIView? {
         guard case DrawerSnapPoint.origin = currentSnapPoint else { return containerView }
         return presentedView
     }

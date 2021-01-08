@@ -7,18 +7,18 @@ public enum DrawerSnapPoint {
 }
 
 public struct DrawerPresentationControllerViewModel {
-    typealias OnSnapPointChangedCallback = (DrawerSnapPoint) -> Void
+    public typealias OnSnapPointChangedCallback = (DrawerSnapPoint) -> Void
 
-    let cornerRadius: CGFloat
-    let borderWidth: CGFloat
-    let borderColor: UIColor
-    let centerYOffset: CGFloat
-    let snapToTopPercentage: CGFloat
-    let snapToOriginPercentage: CGFloat
-    let animationDuration: Double
-    let onSnapPointChanged: OnSnapPointChangedCallback
+    public let cornerRadius: CGFloat
+    public let borderWidth: CGFloat
+    public let borderColor: UIColor
+    public let centerYOffset: CGFloat
+    public let snapToTopPercentage: CGFloat
+    public let snapToOriginPercentage: CGFloat
+    public let animationDuration: Double
+    public let onSnapPointChanged: OnSnapPointChangedCallback
 
-    init(
+    public init(
         cornerRadius: CGFloat = Self.default.cornerRadius,
         borderWidth: CGFloat = Self.default.borderWidth,
         borderColor: UIColor = Self.default.borderColor,

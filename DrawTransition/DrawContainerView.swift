@@ -1,14 +1,14 @@
 import UIKit
 
-public protocol DrawerContainerViewDelegate: AnyObject {
+internal protocol DrawerContainerViewDelegate: AnyObject {
     func view(_ view: DrawerContainerView, shouldPassthroughTouchAt point: CGPoint) -> Bool
     func view(_ view: DrawerContainerView, forTouchAt point: CGPoint) -> UIView?
 }
 
-public final class DrawerContainerView: UIView {
+internal final class DrawerContainerView: UIView {
     weak var delegate: DrawerContainerViewDelegate?
 
-    public override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+    internal override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         guard
             let delegate = self.delegate,
             delegate.view(self, shouldPassthroughTouchAt: point),
