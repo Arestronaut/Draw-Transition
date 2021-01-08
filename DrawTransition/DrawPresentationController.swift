@@ -1,5 +1,6 @@
 import UIKit
 
+/// The `UIPresentationController` used for the draw transition
 public final class DrawerPresentationController: UIPresentationController {
     // MARK: - Properties
     private var model: DrawerPresentationControllerViewModel = .default
@@ -15,6 +16,11 @@ public final class DrawerPresentationController: UIPresentationController {
     private lazy var drawerContainerView: DrawerContainerView = .init()
 
     // MARK: - Initialization
+    /// The convenience initializer for `DrawerPresentationController`
+    ///
+    /// - Parameter presentedViewController: The `UIViewController` that is presented
+    /// - Parameter presentingViewController: The initial `UIViewController`
+    /// - Parameter model: The `DrawerPresentationControllerViewModel` used to setup the transition
     public convenience init(
         presentedViewController: UIViewController,
         presenting presentingViewController: UIViewController?,
@@ -28,8 +34,7 @@ public final class DrawerPresentationController: UIPresentationController {
     public override func containerViewDidLayoutSubviews() {
         super.containerViewDidLayoutSubviews()
 
-        guard let presentedViewCenter = presentedView?.center else { return }
-        presentedView?.center = .init(x: presentedViewCenter.x, y: UIScreen.main.bounds.height + model.centerYOffset)
+        presentedView?.frame.origin = .init(x: 0.0, y: UIScreen.main.bounds.height * model.originHeightPercentage)
     }
 
     public override func presentationTransitionWillBegin() {
@@ -67,10 +72,9 @@ public final class DrawerPresentationController: UIPresentationController {
     }
 
     private func sendToOrigin() {
-        let yOffset = UIScreen.main.bounds.height + model.centerYOffset
-
         UIView.animate(withDuration: model.animationDuration) { [weak self] in
-            self?.presentedView?.center.y = yOffset
+            guard let self = self else { return }
+            self.presentedView?.frame.origin.y = UIScreen.main.bounds.height * self.model.originHeightPercentage
         }
     }
 
