@@ -1,0 +1,6 @@
+framework module DrawTransition {
+  umbrella header "DrawTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}

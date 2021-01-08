@@ -1,0 +1,16 @@
+PODS:
+  - DrawTransition (0.0.1)
+
+DEPENDENCIES:
+  - DrawTransition (from `.`)
+
+EXTERNAL SOURCES:
+  DrawTransition:
+    :path: "."
+
+SPEC CHECKSUMS:
+  DrawTransition: a1a7ad66c039e5ed02a070f29caa5f89af47ad36
+
+PODFILE CHECKSUM: 23acca57e1117bc000d16f64adb86716126237f0
+
+COCOAPODS: 1.8.4
