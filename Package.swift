@@ -1,17 +1,20 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
-    name: "DrawTransition", 
-    platforms: [.iOS(v14)], 
+    name: "DrawTransition",
+    platforms: [.iOS(.v14)],
     products: [
-        .library(name: "DrawTransition", targets: "DrawTransition")
-    ], 
+        .library(
+            name: "DrawTransition",
+            targets: ["DrawTransition"]
+        ),
+    ],
     dependencies: [],
     targets: [
         .target(
-            name: "DrawTransition", 
+            name: "DrawTransition",
             dependencies: [], 
             path: "DrawTransition"
         )
